@@ -2,128 +2,60 @@
 <head>
     <title>my internet page</title>
     <style>
-        html { 
-            background: url('img/background-2.gif') no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
         body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 11px;
-            margin: 0px;
-            margin-top: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f0f0;
+            margin: 20px;
         }
         h1 {
-            color: rgb(204, 98, 169);
-            text-align: center;
+            color: #369;
         }
         p {
-            color: rgb(10, 20, 30);
-        }
-        p.ondark {
-            color: rgb(250,240,230);
-            text-align: center;
-        }
-        a {
-            color: rgb(215, 20, 20);
-        }
-        table.main {
-            border-style: solid;
-            border-color: rgb(121, 36, 50);
-            border: 0px;
-        }
-        td.main {
-            border: 0px;
-            border-color: rgb(121, 36, 50);
-            background-color: rgb(255, 192, 203, 50%);
-
-        }
-        .disclaimer {
-            color: rgb(136, 30, 30);
+            color: #246;
+            font-size: 16px;
         }
         .particle-bats {
-            filter: hue-rotate(270deg) saturate(1) brightness(1.9);
+            filter: hue-rotate(270deg) saturate(1) brightness(1.9)
         }
-        
     </style>
-   
+
 </head>
-<body>
-<button id="particle-toggle" style="position: fixed; top: 10px; right: 10px; z-index: 10000001;">cage the bats</button>
+<body background="img/background.gif">
 
     <!-- MAIN TABLE YOU CANT STEAL THIS -->
-<table border="80px" width="800px" align="center">
+<table border="0" width="75%" align="center">
     <tr>
         <td>
-                
-            <h1 onmouseover="hoverEffect()">Welcome to my internet page</h1>
-            <p class="ondark">This is the main page of my internet page.</p>
+                <button id="particle-toggle" style="position: fixed; top: 10px; right: 10px; z-index: 10000001;">Particles: ON</button>
+    <h1 onmouseover="hoverEffect()">Welcome to my internet page</h1>
+    <p>This is the main page of my internet page.</p>
 
-            <!-- SPACER TABLE -->
-            <table border="0" height="50px"><tr><td></td></tr></table>
+    <!-- HEADER IS OVER -->
+     <!-- SPACER TABLE -->
+     <table height="50px"><tr><td></td></tr></table>
 
-            <table align="center">
-
-                <!-- using colgroup to define column widths -->
-                <colgroup>
-                    <col style="width: 275px;">
-                    <col style="width: 400px;">
-                    <col style="width: 275px;">
-                </colgroup>
-
-                <tr>
-                    <td>
-                        <table width="100%">
-                          <tr>
-                            <td class="main">
-                              <p>I like Nunito Font</p>
-                            </td>
-                          </tr>
-                        </table>
-                        <p>
-                            I like pokEmon and play it every day.
-                        </p>
-                    </td>
-                    <td rowspan="0" align="center">
-                        <p class="ondark">
-                            hey
-                        </p>
-                    </td>
-                    <td class="main">
-                        <p>
-                        I like movies and I watch them but less than how often I play pokEmon these days
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="main">
-                        <a>Current Pokemon Team</a>
-                    </td>
-                    <td class="main">
-                        <p>
-                        movies I like the big lebowski and fargo but sometimes i rewatch batman becuase i like that one.
-                        </p>
-                    </td>
-                </tr>
-            </table>
-
-            <!-- SPACER TABLE -->
-            <table height="50px"><tr><td></td></tr></table>
-            <!-- END SPACER TABLE -->
-            
-            <p class="disclaimer">
-                this page is copyright and trademarked 2026 you cant steal from me or copy it or anything like that. if you do i will find you and i will sue you. i have a specific set of skills. this page is protected by the DMCA and all rights are reserved. if you want to use any of the content on this page you must get permission from me first. not even john cena could see me coming for him if he violated this. if you want to contact me about using my content please email me. thank you
-            </p>
-            <p align="center"><a href="http://qntm.org/camtime"><img src="http://qntm.org/files/camtime/camtime.png" alt="Ban time travel NOW"></a></p>
+    <table border="1" width="75%" bordercolor="black" align="center">
+        <tr>
+            <td bgcolor="cherizardeyecolor" align="center">I like pokEmon and play it every day.</td>
+            <td bgcolor="pekachueyescolor">I like movies and I watch them but less than how often I play pokEmon these days</td>
+        </tr>
+        <tr>
+            <td bgcolor="bulbasaurbodycolor">these are the ones on my team right now: floragato, fletchinder, charcadet, pawmo, gible, gastly and i'm playing violet version.</td>
+            <td bgcolor="squirtlebodycolor"><font color="white">movies I like the big lebowski and fargo but sometimes i rewatch batman becuase i like that one.</font></td>
+        </tr>
+    </table>
+         <!-- SPACER TABLE -->
+     <table height="50px"><tr><td></td></tr></table>
+    <p>
+    this page is copyright and trademarked 2026 you cant steal from me or copy it or anything like that. if you do i will find you and i will sue you. this page is protected by the DMCA and all rights are reserved. if you want to use any of the content on this page you must get permission from me first. if you want to contact me about using my content please email me at <a href>webmater AT whom DOT dev</a>
+    </p>
+    <p align="center"><a href="http://qntm.org/camtime"><img src="http://qntm.org/files/camtime/camtime.png" alt="Ban time travel NOW"></a></p>
         </td>
     </tr>
-</table>
 
+</table>
 </body>
 </html>
-
 <script>
     /*!
  * Bats Cursor.js
@@ -138,12 +70,12 @@
   var height = window.innerHeight;
   var cursor = {x: width/2, y: width/2};
   var particles = [];
-  var particlesEnabled = false;
+  var particlesEnabled = true;
   
   function setToggleText() {
     var btn = document.getElementById('particle-toggle');
     if (!btn) return;
-    btn.textContent =  (particlesEnabled ? 'CAGE' : 'RELEASE') + ' THE BATS';
+    btn.textContent = 'Particles: ' + (particlesEnabled ? 'ON' : 'OFF');
   }
   
   function setupToggleButton() {
