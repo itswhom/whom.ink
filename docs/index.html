@@ -13,19 +13,20 @@
     />
     <style>
       html {
-        background: url("img/background-2.gif") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        height: 100%;
       }
+      
       body {
+        margin: 0;
+        margin-top: 50px;
         padding-top: env(safe-area-inset-top);
         padding-right: env(safe-area-inset-right);
         padding-bottom: env(safe-area-inset-bottom);
         padding-left: env(safe-area-inset-left);
-        margin: 0px;
-        margin-top: 50px;
+        min-height: 100%;
+        background: url("img/background-2.gif") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
       }
       p {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
